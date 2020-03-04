@@ -6,6 +6,7 @@ Quick sort algorithm description as follows:
 |Index|0  | 1 | 2 |3  | 4 |  5|6 | 7|8  | 9 |
 |--|--|--|--|--|--|--|--|--|--|--|
 Elements|12  | 13 | 2 | 5 | 1 | 8 |  15| 16 |4  |3
+
 We are going to sort the above array by using Quick sort technique. For that we need to take two variable just like cursor **start, end and pivot**. We are considering pivot element as the first element.
 
 In this case pivot element is 12 (the 1st element). *Lower* means lowest index and *upper* means highest index of the array or sub array. Initially **start**  is pointing to the lower. **end** is pointing to the upper.
@@ -42,6 +43,7 @@ First check**
 1st| 0 | 9 |
 2nd| 1 | 9 |
 [12 3 2 5 1 8 15 16 4 13]
+
 **second check**
 ||start| end |
 |--|--|--|
@@ -51,8 +53,15 @@ First check**
 **Third check**
 ||start| end |
 |--|--|--|
- 1st|6 | 8 |
+ 1st|7 | 6 |
 [12 3 2 5 1 8 4 16 15 13 ]
+
+**Fourth check**
+||start| end |
+|--|--|--|
+ 1st|3 | 4 |
+[4 3 2 1 5 8 12 16 15 13 ]
+
 
 and so on..
 
